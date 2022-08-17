@@ -5,6 +5,12 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
   const newDepositeString = depositField.value;
   const newDeposite = parseFloat(newDepositeString);
   console.log(newDeposite);
+  if(isNaN(newDeposite)){
+    alert('pls Provide a number')
+    depositField.value ='';
+    return;
+
+  }
 
 
   
@@ -41,6 +47,12 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
     const withdrawFieldString =  withdrawField.value;
     const withdrawFieldValue = parseFloat(withdrawFieldString);
     console.log(withdrawFieldValue);
+    if(isNaN(withdrawFieldValue)){
+        alert('pls Provide a number')
+        withdrawField.value ='';
+        return;
+    
+      }
 
     // withdraw change
 
