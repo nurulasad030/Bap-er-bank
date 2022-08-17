@@ -58,6 +58,13 @@ const totalAmount = document.getElementById('total');
   console.log(totalValue); 
 
 // calculation and update 
+if( withdrawFieldValue>totalValue){
+    alert('Baap er bank e' + withdrawFieldValue + ' tk nai');
+    withdrawField.value ='';
+    return;
+}
+
+
 
 const cureentWithdraw = previoswithdrawTotalElementValue + withdrawFieldValue  ;
 
